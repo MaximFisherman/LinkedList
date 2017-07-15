@@ -1,10 +1,12 @@
 #include <iostream>
 
 using namespace std;
+
 struct element{
 int x;
 element *Next;//adress
 };
+
 class List{
 element *Head;
 public:
@@ -31,13 +33,11 @@ while(temp != NULL){
 }
 };
 
-
 int main()
 {
     int N;
     int x;
     List lis;
-
     cout<<"Input N please : "; cin>>N;
     for(int i=0;i<N;i++){
         cin>>x;
